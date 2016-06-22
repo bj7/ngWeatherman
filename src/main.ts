@@ -3,8 +3,13 @@ import { enableProdMode } from '@angular/core';
 import { AppComponent, environment,  } from './app/';
 import { APP_ROUTER_PROVIDERS } from './app.routes';
 
+
 if (environment.production) {
   enableProdMode();
 }
 
-bootstrap(AppComponent);
+bootstrap(AppComponent, [
+  APP_ROUTER_PROVIDERS
+])
+
+.catch(err => console.error(err));

@@ -18,7 +18,8 @@
 
   "files": [
     "main.ts",
-    "app.component.ts",
+    "./*",
+    "./app/*",
     "typings.d.ts"
   ]
 }
